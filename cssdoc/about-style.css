@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color:  #141414;
+    color: #dc1d62;
+    /* #F5EEDC */
+}
+li {
+    list-style: circle;
+    color: white;
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+a:hover {
+    color: #dc1d62;
+}
+h3 {
+    margin-top: 20px;
+    color: #161616;
+}
+p {
+    font-weight: 300;
+    color: #b8babc;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-300px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from{ bottom:-300px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: -25px 0 0 -25px;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #03A9F4;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+#page-content {
+    display:none;
+}
+
+/*  NAV-BAR-------------*/
+#header {
+    text-align: left;
+}
+.navigation-bar {
+    margin-left: 7%;
+}
+.navbar-custom {
+    background-color: white;
+    opacity: 0.9;
+}
+.nav-ul {
+    margin-left: 65%;
+}
+.nav-ele {
+    padding-left: 10px;
+}
+.navbar-dark .navbar-brand {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:black;
+}
+
+/* About */
+.like-button {
+    position: fixed;
+    top: 100px;
+    left:40%;
+    letter-spacing: 2px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#count {
+    color: rgb(155, 155, 155);
+    font-weight: bolder;
+}
+#like-btn {
+    border: none;
+    background-color: #0A66C2;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#about {
+    margin: 100px 0px;
+}
+.about-content {
+    padding-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: left;
+    margin: 20px 20%;
+    color: #161616;
+}
+.cp-journey {
+    padding-top: 60px;
+}
+.cp-journey h1 {
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    color: #dc1d62;
+}
+
+
+/* Contact */
+#contact {
+    padding: 40px 0px 2px;
+    background-color: #F0ECE3;
+    color: #161616;
+}
+#contact h1 {
+    font-size: 5rem;
+    letter-spacing: 0;
+
+}
+#contact h3 {
+    font-size: 14px;
+}
+#contact a {
+    color: #161616;
+}
+.social-icons {
+    font-size: 25px;
+    padding: 20px 0px 20px;
+}
+.social-icons:hover {
+    transition: 0.5s;
+}
+.pad-icon {
+    padding-left: 25px;
+}
+.linkedin:hover {
+    color: #0A66C2;
+    cursor: pointer;
+}
+.instagram:hover {
+    color: rgb(241, 45, 45);
+    cursor: pointer;
+}
+.github:hover {
+    color: purple;
+    cursor: pointer;
+}
+.gmail:hover {
+    color: red;
+    cursor: pointer;
+}
+.resume-btn .btn{
+    background-color: #F0ECE3;
+    color: #161616;
+}
+.resume-btn .btn:hover{
+    background-color: #0A66C2;
+    color: #F0ECE3;
+    border-color: #0A66C2;
+}
+.copy-right {
+    color: #161616;
+}
+
+/* Tab */
+@media screen and (max-width:1200px) and (min-width:760px) {
+    .about-content {
+        margin: 20px 40px;
+        font-size: 22px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:800px){
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 0;
+    }
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border: 7px solid #f3f3f3;
+        border-radius: 50%;
+        margin: -25px 0 0 -25px;
+        border-top: 7px solid #03A9F4;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    .about-content {
+        margin: 20px 10px;
+        font-size: 18px;
+    }
+    .like-button {
+        left:35%;
+    }
+    /* Contact */
+    #contact h1 {
+        font-size: 3rem;
+    }
+    .social-icons {
+        font-size: 20px;
+    }
+    #contact h3 {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .nav-ul {
+        margin-left: auto;
+    }
+    .nav-ele {
+        padding-left: 0px;
+    }
+}

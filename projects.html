@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/3a02512a44.js"></script>
+
+
+    <!-- External-CSS -->
+    <link rel="stylesheet" href="cssdoc/project-style.css">
+    <link rel="icon" href="Images/Myphoto.png">
+
+    <title>Mouleaswar's Portfolio</title>
+</head>
+
+<body onload="myFunction()">
+    <!-- Loading -->
+    <div id="loader"></div>
+
+    <!-- NAVBAR -->
+    <div class="animate-bottom" id="page-content">
+        <div id="header">
+            <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-custom">
+                <div class="navigation-bar container container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h2>What I've done</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav-ul navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-ele nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-ele nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="projects">
+            <div class="like-button container-fluid">
+                <button id="like-btn" onclick="update()">
+                    Like
+                </button>
+                    <p id="count"></p>
+            </div>
+            <h1>My Projects</h1>
+            <div class="myprojects-box">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
+                        <div class="section sec-1">
+                            <h3>Digital Signature</h3>
+                            <div class="project-content">
+                                <p>
+                                    A digital signature is a mathematical scheme for verifying the authenticity of
+                                    digital
+                                    messages or documents.There are many other websites where digital signature is used
+                                    for
+                                    all transaction
+                                </p>
+                                <div class="project-link">
+                                    <a href="https://github.com/M0u1ea5/ReallifeProjects/tree/main/Reallife%20Projects/Digital%20Signature" target="_blank">Open up ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
+                        <div class="section sec-2">
+                            <h3>Image to Text</h3>
+                            <div class="project-content">
+                                <p>
+                                    It is a program which is used to convert a pdf to a text format.
+                                    There is no need in manual operation.
+                                    It automatically recognizes the text and print in the screen
+                                </p>
+                                <div class="project-link">
+                                    <a href="https://github.com/M0u1ea5/ReallifeProjects/tree/main/Reallife%20Projects/Extracting%20Text" target="_blank">Open up ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
+                        <div class="section sec-3">
+                            <h3>Quarantine-mate</h3>
+                            <div class="project-content">
+                                <p>
+                                    Qmate is an Android application which helps people who are having mild symptoms
+                                    of Covid 19.We can easy locate the nearby hospitals and also we can intake correct
+                                    food
+                                    using this app
+                                </p>
+                                <div class="project-link">
+                                    <a href="https://github.com/M0u1ea5/Q-mate/blob/main/app-release.apk" target="_blank">Open up ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 gy-2 gx-2">
+                        <div class="section sec-4">
+                            <h3>2-D Games</h3>
+                            <div class="project-content">
+                                <p>
+                                    This project is done for fun I have recreated my favourite games into 2D and also
+                                    I've
+                                    also made some games which is purely based my imagination
+                                </p>
+                                <div class="project-link">
+                                    <a href="https://github.com/M0u1ea5/Games" target="_blank">Open up ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr><br>
+
+        <!-- Achivements -->
+        <div class="sec-title">
+            <h1>Achievements</h1>
+        </div>
+        <div id="certificates">
+            <div class="certificate-box">
+                <ul>
+                    <h2><strong>Inter College</strong></h2><br>
+                    <li>
+                        <p>Winner in GCT's YsYouth club problem solving competition </p>
+                    </li>
+                    <li>
+                        <p>Runner in SKCT's National level symposium problem solving competition</p>
+                    </li>
+                    <li>
+                        <p>Ranked 729 in India and 1st in my college in a problem solving competition conducted by
+                            Scalar
+                            academy(Interview Bit)</p>
+                    </li>
+                    <hr>
+                </ul><br>
+
+                <ul>
+                    <h2><strong>Intra College</strong></h2><br>
+                    <li>
+                        <p>Winner in Sparkz's problem solving competition conducted by CSE department</p>
+                    </li>
+                    <li>
+                        <p>Finalist in Covid-19 app development Ideathon 2021 as a solo participant</p>
+                    </li>
+                    <hr>
+                </ul><br>
+                <ul>
+                    <h2><strong>Others</strong></h2><br>
+                    <li>
+                        <p>Won 3rd prize in 2D animation hackathon and won INR 10000</p>
+                    </li>
+                    <li>
+                        <p>Secured a rank of 2317 in Google Kickstart Round F 2021 among other global participants</p>
+                    </li>
+                    <li>
+                        <p>Secured rank 62 in CodeChef starters 9 Division 3 out of 8000+ participants</p>
+                    </li>
+                    <li>
+                        <p>Advanced to round 2 in Facebook Hacker Cup 2021 by securing top 6500 rank in global</p>
+                    </li>
+                    <li>
+                        <p>Ended up with global rank of 423th/55000 in Newton Grand contest 2021</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container-fluid">
+                <h1>Get in touch</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mouleaswar-shanmugam-747ba11b8/" target="_blank">
+                        <i class="linkedin bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/m0u1ea5/" target="_blank">
+                        <i class="instagram pad-icon bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/M0u1ea5" target="_blank">
+                        <i class="github pad-icon bi bi-github"></i>
+                    </a>
+                    <a href="mailto:mouleaswar2001@outlook.com" target="_blank">
+                        <i class="gmail pad-icon bi bi-envelope"></i>
+                    </a>
+                    
+                </div>
+                <div class="resume-btn">
+                    <a href="Mouleaswar Resume.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg">Resume</button>
+                </div>
+                <h3 class="copy-right">© 2022 Mouleaswar</h3>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="js/transition-down.js"></script>
+    <script src="js/like-btn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

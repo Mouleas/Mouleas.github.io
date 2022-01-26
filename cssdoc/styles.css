@@ -1,0 +1,463 @@
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+} 
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: #161616;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+h3 {
+    margin-top: 20px;
+    color: #161616;
+}
+h5 {
+    color: #dc1d62;
+}
+
+
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg);
+    }    
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-300px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from{ bottom:-300px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+@media (prefers-reduced-motion:no-preference) {
+    .animate-container {
+        position: relative;
+        -webkit-animation-name: animateleft;
+        -webkit-animation-duration: 1.2s;
+        animation-name: animateleft;
+        animation-duration: 1.2s
+    }
+    
+    @-webkit-keyframes animateleft {
+        from { left:-100px; opacity:0 } 
+        to { left:0px; opacity:1 }
+    }
+    
+    @keyframes animateleft { 
+        from{ left:-100px; opacity:0 } 
+        to{ left:0; opacity:1 }
+    }
+}
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: -25px 0 0 -25px;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #03A9F4;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+#page-content {
+    display: none;
+}
+.container-fluid {
+    padding: 0px 0px;
+}
+.row {
+    margin: 0px 0px;
+}
+.col {
+    padding: 0px,0px;
+}
+
+/*  NAV-BAR-------------*/
+#header {
+    text-align: left;
+}
+.navigation-bar {
+    margin-left: 7%;
+}
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.nav-ul {
+    margin-left: 65%;
+}
+.nav-ele {
+    padding-left: 10px;
+}
+
+
+/* TITLE-SECTION --------*/
+.like-button {
+    position: fixed;
+    top: 100px;
+    left:40%;
+    letter-spacing: 2px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#count {
+    color: rgb(155, 155, 155);
+    font-weight: bolder;
+}
+#like-btn {
+    border: none;
+    background-color: #0A66C2;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#title-section img {
+    filter: blur(1px);
+    opacity: 0.5;
+    height: 630px;
+    width: 100%;
+}
+.mobile {
+    display: none;
+}
+.title-con {
+    position: absolute;
+    top: 0px;
+    color: white;
+}
+.title-h1 {
+    padding-top: 200px;
+    font-size: 130px;
+    letter-spacing: 10px;
+}
+.para-centre {
+    padding: 0px 40px;
+}
+.title-p {
+    margin-left: 17px;
+    line-height: 6;
+    letter-spacing: 7px;
+}
+.sub-font {
+    font-size: 16px;
+}
+.overlay {
+    margin-left: 12px;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.explore:hover .overlay {
+    opacity: 1;
+
+}
+
+#downarrow img{
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    filter: blur(0px);
+    animation: flip 1.5s infinite;
+}
+
+.sub-font:hover {
+    transform: scale(1.09);
+    transition: 1s;
+}
+
+
+/* WhoIAm -----------*/
+#whoiam {
+    text-align: left;
+    padding: 80px 80px 0px 80px;
+    background-color:#F0ECE3;
+}
+
+#whoiam h1 {
+    color: black;
+    font-size: 5rem;
+    line-height: 2;
+    letter-spacing: 6px;
+}
+.section1 p {
+    color: #161616;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.whoiam-img {
+    color: #F0ECE3;
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+}
+#whoiam .btn {
+    margin-top: 30px;
+}
+
+/* Things-learnt */
+#things-learnt {
+    background-color: #161616;
+    text-align: left;
+    padding: 100px 80px 50px;
+    color: #dc1d62;
+}
+#things-learnt h1 {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.section2 h2 {
+   padding: 50px 0px 0px 0px;
+}
+#things-learnt span {
+    padding-left: 20px;
+}
+
+.pro-lang {
+    height: 40px;
+    width: 40px;
+    margin: 20px 5px;
+}
+
+.java {
+    height: 60px;
+    width: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+} 
+
+.section2 p {
+    color: #bbbbbb;
+    letter-spacing: 2px;
+    line-height: 2;
+    padding-bottom: 25px;
+}
+.gif-img {
+    height: 70%;
+    margin: 80px 40px 0px 40px;
+}
+
+
+/* Contact */
+#contact {
+    padding: 40px 0px 10px;
+    background-color: #F0ECE3;
+    color: #161616;
+}
+#contact h1 {
+    font-size: 5rem;
+}
+#contact h3 {
+    font-size: 14px;
+}
+#contact a {
+    color: #161616;
+}
+.social-icons {
+    font-size: 25px;
+    padding: 20px 0px 20px;
+}
+.social-icons:hover {
+    transition: 0.5s;
+}
+.pad-icon {
+    padding-left: 25px;
+}
+.linkedin:hover {
+    color: #0A66C2;
+    cursor: pointer;
+}
+.instagram:hover {
+    color: rgb(241, 45, 45);
+    cursor: pointer;
+}
+.github:hover {
+    color: purple;
+    cursor: pointer;
+}
+.gmail:hover {
+    color: red;
+    cursor: pointer;
+}
+.resume-btn .btn{
+    background-color: #F0ECE3;
+    color: #161616;
+}
+.resume-btn .btn:hover{
+    background-color: #0A66C2;
+    color: #F0ECE3;
+    border-color: #0A66C2;
+}
+
+
+@media screen and (max-width:991px) {
+    .gif-img {
+        display: none;
+    }
+    
+}
+/* MOBILE And TAB*/
+@media screen and (max-width:1200px) and (min-width:801px) {
+    #title-section h1 {
+        font-size: 6rem;
+    }
+    .gif-img {
+        margin-top: 200px;
+        height: 50%;
+    }
+    
+}
+@media screen and (max-width:800px){
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border: 7px solid #f3f3f3;
+        border-radius: 50%;
+        margin: -25px 0 0 -25px;
+        border-top: 7px solid #03A9F4;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    /* Title --------------*/
+    .like-button {
+        left:35%;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    #title-section img {
+        filter: blur(0px);
+        opacity: 0.5;
+        height: 650px;
+        width: 100%;
+    }
+    .title-con {
+        top: 0px;
+    }
+    .title-h1 {
+        padding-top: 250px;
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    .title-p {
+        letter-spacing: 3px;
+    }
+    .para-centre {
+        padding: 0px 10px;
+    }
+    .sub-font {
+        font-size: 10px;
+    }
+    .explore {
+        margin-top: 65px;
+        font-size: 10px;
+    }
+
+    .overlay {
+        margin-left: 12px;
+        letter-spacing: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        opacity: 0.7;
+    }    
+    #downarrow img{
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+        filter: blur(0px);
+        animation: flip 1.5s infinite;
+    }
+    
+    .sub-font:hover {
+        transform: scale(1);
+    }
+
+    /* WhoIAm -----------*/
+    #whoiam {
+        padding: 45px 10px 45px;
+    }
+    #whoiam h1 {
+        font-size: 3rem;
+    }
+    .whoiam-img {
+        display: none;
+    }
+
+    /* Things-learnt */
+    #things-learnt {
+        margin-top: 20px;
+        padding: 35px 10px;
+    }
+    #things-learnt h1 {
+        font-size: 3rem;
+        padding-left: 12px;
+    }
+    .gif-img {
+        display: none;
+    }
+
+    /* Contact */
+    #contact h1 {
+        font-size: 3rem;
+    }
+    .social-icons {
+        font-size: 20px;
+    }
+    #contact h3 {
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .nav-ul {
+        margin-left: auto;
+    }
+    .nav-ele {
+        padding-left: 0px;
+    }
+    #whoiam {
+        padding-bottom: 45px;
+    }
+    #whoiam img {
+        display: none;
+    }
+}

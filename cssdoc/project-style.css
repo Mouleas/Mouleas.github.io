@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: #161616;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #dc1d62;
+    letter-spacing: 4px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    color: white;
+    list-style: circle;
+}
+
+hr {
+   background-color: white;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-300px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from{ bottom:-300px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: -25px 0 0 -25px;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #03A9F4;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+#page-content {
+    display:none;
+}
+
+
+/*  NAV-BAR-------------*/
+#header {
+    text-align: left;
+}
+.navigation-bar {
+    margin-left: 7%;
+}
+.navbar-custom {
+    background-color: white;
+    opacity: 0.9;
+}
+.nav-ul {
+    margin-left: 65%;
+}
+.nav-ele {
+    padding-left: 10px;
+}
+
+
+
+/* Projects */
+.like-button {
+    position: fixed;
+    top: 100px;
+    left:40%;
+    letter-spacing: 2px;
+    z-index: 1;
+    opacity: 0.5;
+}
+#count {
+    color: rgb(155, 155, 155);
+    font-weight: bolder;
+}
+#like-btn {
+    border: none;
+    background-color: #0A66C2;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#projects {
+    border-radius: 1%;
+    margin-top: 100px;
+}
+.myprojects-box {
+    padding: 50px 50px;
+    color: white;
+}
+.section {
+    text-align: left;
+    padding: 20px 25px 10px 25px;
+    background-color: #111111;
+}
+.project-content {
+    padding: 20px 0px;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: #b8babc;
+}
+.project-link:hover {
+    transition: 0.1s;
+    transform: translateX(15px);
+    text-shadow: 0 0 5px rgb(147, 147, 255);
+}
+.sec-1:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+.sec-2:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+.sec-3:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+.sec-4:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+
+
+
+/* Achivements */
+#certificates {
+    border-radius: 1%;
+    text-align: left;
+    margin: 50px 15%;
+    background-color: #111111;
+    letter-spacing: 2px;
+}
+#certificates h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+#certificates p {
+    color: #b8babc;
+}
+.certificate-box {
+    padding: 30px 50px;
+}
+.certificate-box p {
+    padding-bottom: 2px;
+}
+
+
+/* Contact */
+#contact {
+    padding: 40px 0px 2px;
+    background-color: #F0ECE3;
+    color: #161616;
+}
+#contact h1 {
+    font-size: 5rem;
+    letter-spacing: 0;
+    color: #161616;;
+}
+#contact h3 {
+    font-size: 14px;
+}
+#contact a {
+    color: #161616;
+}
+.social-icons {
+    font-size: 25px;
+    padding: 20px 0px 20px;
+}
+.social-icons:hover {
+    transition: 0.5s;
+}
+.pad-icon {
+    padding-left: 25px;
+}
+.linkedin:hover {
+    color: #0A66C2;
+    cursor: pointer;
+}
+.instagram:hover {
+    color: rgb(241, 45, 45);
+    cursor: pointer;
+}
+.github:hover {
+    color: purple;
+    cursor: pointer;
+}
+.gmail:hover {
+    color: red;
+    cursor: pointer;
+}
+.resume-btn .btn{
+    background-color: #F0ECE3;
+    color: #161616;
+}
+.resume-btn .btn:hover{
+    background-color: #0A66C2;
+    color: #F0ECE3;
+    border-color: #0A66C2;
+}
+.copy-right {
+    padding: 30px 0px 5px;
+    color: #161616;
+}
+
+/* MOBILE And TAB*/
+@media screen and (max-width:1200px) and (min-width:801px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+}
+@media screen and (max-width:800px){
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border: 7px solid #f3f3f3;
+        border-radius: 50%;
+        margin: -25px 0 0 -25px;
+        border-top: 7px solid #03A9F4;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0;
+    }
+    .like-button {
+        left:35%;
+    }
+    /* Projects */
+    .myprojects-box {
+        padding: 0px 25px 100px;
+    }
+    .section {
+        margin-top: 30px;
+    }
+
+    /* Achievement */
+    #certificates {
+        border-radius: 1%;
+        text-align: left;
+        margin: 50px 10px 70px;
+        background-color: #111111;
+        letter-spacing: 2px;
+    }
+    .sec-title h1 {
+        font-size: 3rem;
+    }
+    #certificates h2 {
+        font-size: 1.5rem;
+    }
+    #certificates p {
+        color: #b8babc;
+    }
+    .certificate-box {
+        padding: 30px 5px;
+    }
+    .certificate-box p {
+        padding-bottom: 2px;
+    }
+
+    /* Contact */
+    #contact h1 {
+        font-size: 3rem;
+    }
+    .social-icons {
+        font-size: 20px;
+    }
+    #contact h3 {
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .nav-ul {
+        margin-left: auto;
+    }
+    .nav-ele {
+        padding-left: 0px;
+    }
+}
